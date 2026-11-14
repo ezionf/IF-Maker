@@ -11,8 +11,16 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 header {
+    display: flex;
     background-color: #333333;
     color: whitesmoke;
     min-height: 80px;
@@ -32,6 +40,17 @@ header a {
     color: inherit;
     transition: 0.3s ease-in-out;
 }
+header img {
+    max-width: 50px;
+    height: auto;
+    display: block;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
 nav a:hover {
     color: #6EBF94;
     text-decoration: underline;
@@ -49,7 +68,7 @@ header div {
 header ul {
     display: flex;
     align-items: center;
-    gap: 50%;
+    gap: 15%;
 }
 
 .location-button {
@@ -147,6 +166,17 @@ main {
     background-color: #409166;
 }
 @media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
     .info-container {
         justify-content: center;
         margin: 30px auto;
@@ -159,4 +189,21 @@ main {
         max-width: 280px;
         width: 100%;
     }
+    form, main, .info-container, .form-container {
+        padding: 10px;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    input, textarea, select, button {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+div, section, header, footer, main {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
 }
