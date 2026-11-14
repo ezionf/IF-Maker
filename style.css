@@ -15,11 +15,17 @@ body {
 header {
     background-color: #333333;
     color: whitesmoke;
-    height: 80px;
-    display: flex;
+    min-height: 80px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5px;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+header nav{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 header a {
     text-decoration: none;
@@ -64,6 +70,15 @@ footer {
     font-size: 16px;
     padding: 15px;
 }
+footer a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease-in-out;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #6EBF94;
+}
 main {
     flex-grow: 1;
 }
@@ -78,9 +93,6 @@ main {
     background-color: whitesmoke;
     border-radius: 12px;
     box-shadow: 0px 4px 4px 0px #00000040;
-}
-.lab-image {
-    border-radius: 12px;
 }
 .info-container h2 {
     margin-top: 15px;
@@ -133,4 +145,18 @@ main {
 }
 .submit-button:hover {
     background-color: #409166;
+}
+@media (max-width: 540px) {
+    .info-container {
+        justify-content: center;
+        margin: 30px auto;
+        padding: 0 15px;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+    }
+    .info-container img {
+        max-width: 280px;
+        width: 100%;
+    }
 }
