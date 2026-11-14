@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF Maker Vix - Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<body>
+    <header>
+        <div>
+            <img src="assets/images/logoicon.svg" alt="IF Maker Logo Icon" height="48">
+            <span>IF Maker Vix</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <a href="about.html#location">
+            <button class ="location-button" aria-label="Lab Location">Visit Us</button>
+        </a>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form method="get" action="contact.html">
+                <div class="intention">
+                    <label for="intention-select">What's your intention?</label>
+                    <select id="intention-select" name="intention">
+                        <option value="0">Choose your intention</option>
+                        <option value="1">Visit the Laboratory</option>
+                        <option value="2">Join the team</option>
+                    </select>
+                </div>
+
+                <div class="name-user">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" placeholder="Your name" required name="name">
+                </div>
+
+                <div class="email-user">
+                    <label for="email">Your email</label>
+                    <input type="text" id="email" placeholder="Your email" required name="email">
+                </div>
+
+                <div class="phone-user">
+                    <label for="phonenumber">Your phone number</label>
+                    <input type="number" id="phonenumber" placeholder="Your phone number" required name="number">
+                </div>
+
+                <div class="message">
+                    <label for="message-text">Why you want visit us or join the team?</label>
+                    <textarea id="message-text" row="5" placeholder="Write here..." name="message"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        <p>It's just to demonstrate</p>
+        </div>
+    </main>
+
+    <footer>
+                <h2>Connect With Us</h2>
+        <p>You can find us on <a href="https://www.instagram.com/ifmaker_vix/" target="_blank" rel="noopener">our Instagram Profile</a>.</p>
+        <p>Or send us an email: <a href="mailto:ifmaker.vi@ifes.edu.br">ifmaker.vi@ifes.edu.br</a></p>
+        <p>&copy; 2026 IF Maker Vix</p>
+    </footer>
+</body>
+</html>

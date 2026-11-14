@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Gradiente 3D para a esfera vermelha central -->
+    <radialGradient id="sphereGrad" cx="44%" cy="38%" r="55%" fx="44%" fy="38%">
+      <stop offset="0%" stop-color="#f26b68" />
+      <stop offset="45%" stop-color="#bf403d" />
+      <stop offset="85%" stop-color="#8c2927" />
+      <stop offset="100%" stop-color="#701f1d" />
+    </radialGradient>
+
+    <!-- Gradiente para os losangos verdes -->
+    <linearGradient id="diamondGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5d9454" />
+      <stop offset="50%" stop-color="#4e8046" />
+      <stop offset="100%" stop-color="#3f6b38" />
+    </linearGradient>
+
+    <!-- Sombra suave para dar profundidade entre as peças -->
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#1a2e17" flood-opacity="0.35" />
+    </filter>
+
+    <!-- Modelo reutilizável do losango com borda chanfrada -->
+    <g id="greenDiamond" filter="url(#dropShadow)">
+      <!-- Base externa -->
+      <rect x="-54" y="-54" width="108" height="108" rx="12" ry="12" fill="url(#diamondGrad)" stroke="#3b6334" stroke-width="2" />
+      <!-- Detalhe de chanfro interno (borda iluminada) -->
+      <rect x="-48" y="-48" width="96" height="96" rx="8" ry="8" fill="none" stroke="#76ad6d" stroke-width="2" opacity="0.7" />
+    </g>
+  </defs>
+
+  <!-- Esfera vermelha central -->
+  <circle cx="200" cy="200" r="68" fill="url(#sphereGrad)" />
+
+  <!-- Losango Superior -->
+  <use href="#greenDiamond" transform="translate(200, 106) rotate(45)" />
+
+  <!-- Losango Esquerdo -->
+  <use href="#greenDiamond" transform="translate(106, 200) rotate(45)" />
+
+  <!-- Losango Direito -->
+  <use href="#greenDiamond" transform="translate(294, 200) rotate(45)" />
+
+  <!-- Losango Inferior -->
+  <use href="#greenDiamond" transform="translate(200, 294) rotate(45)" />
+</svg>

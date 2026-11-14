@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #333333;
+    color: whitesmoke;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+header li {
+    list-style: none;
+}
+header div {
+    display: flex;
+    align-items: center;
+}
+header span {
+    font-size: 36px;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 50%;
+}
+.location-button {
+    background-color: #6EBF94;
+    color: red;
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.location-button:hover {
+    background-color: #409166;
+}
+footer {
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+}
+main {
+    flex-grow: 1;
+}
+.info-container {
+    max-width: 800px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 33px 61px;
+    gap: 10%;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.lab-image {
+    border-radius: 12px;
+}
+.info-container h2 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+.form-container {
+    max-width: 800px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 61px;
+    gap: 20%;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.form-container div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.form-container label{
+    font-size: 24px;
+    margin-bottom: 6px;
+    font-weight: 600px;
+}
+.form-container input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E8EAED;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #1E1E1E;
+    font-family: inherit;
+}
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6EBF94;
+    color: red;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+.submit-button:hover {
+    background-color: #409166;
+}
